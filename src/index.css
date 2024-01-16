@@ -21,3 +21,9 @@
 hr{
   border-color: rgb(47, 46, 46);
 }
+.glassCard:hover{
+  height:11rem;
+  width: 11rem;
+  background-color: rgba(71, 67, 67, 0.653);
+  transition: all 0.3s ease;
+}
