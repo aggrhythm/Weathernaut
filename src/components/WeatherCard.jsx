@@ -40,10 +40,10 @@ const WeatherCard=({
   }, [iconString])
 
   return (
-    <div className='w-[22rem] min-w-[22rem] h-[30rem] glassCard p-4'>
+    <div className='w-[22rem] min-w-[22rem] h-[35rem] glassCard p-4'>
       <div className='flex w-full just-center, items-center gap-4 mt-12 mb-4'>
-        <img src={icon} alt="weather_icon" className='h-[10.5rem] w-[10.5rem]' />
-        <p className='font-bold text-5xl flex justify-center items-center' >{temperature} &deg;C</p>
+        <img src={icon} alt="weather_icon" className='h-[8.5rem] w-[8.5rem]' />
+        <p className='font-bold text-4xl flex justify-center items-center' >{temperature} &deg;C</p>
       </div>
       <div className='font-bold text-center text-xl'>
         {place}
@@ -53,8 +53,8 @@ const WeatherCard=({
         <p className='flex-1 text-center p-2'>{time}</p>
       </div>
       <div className='w-full flex justify-between items-center mt-4 gap-4'>
-        <p className='flex-1 text-center p-2 font-bold bg-blue-400 shadow rounded-lg'>Wind Speed <p className='font-normal'>{windspeed} km/h</p></p>
-        <p className='flex-1 text-center p-2 font-bold rounded-lg bg-blue-400'>Humidity <p className='font-normal'>{humidity} gm/m&#179;</p></p>
+        <p className='flex-1 text-center p-2 font-bold bg-blue-300 shadow rounded-lg'>Wind Speed <p className='font-normal'>{windspeed} km/h</p></p>
+        <p className='flex-1 text-center p-2 font-bold rounded-lg bg-blue-300'>Humidity <p className='font-normal'>{humidity} gm/m&#179;</p></p>
       </div>
       <div className='w-full p-3 mt-4 flex justify-between items-center'>
         <p className='font-semibold text-lg'>Heat Index</p>
