@@ -35,7 +35,7 @@ hr{
   background-color: rgba(92, 112, 112, 0.653);
   transition: all 0.3s ease;
 }
-.glassCard:hover img {
+.glassCard2 img {
   animation: cloudMovement 0.5s ease-in-out infinite alternate; 
 }
 
