@@ -32,9 +32,18 @@ hr{
 .glassCard:hover{
   height:11rem;
   width: 11rem;
-  background-color: rgba(94, 111, 111, 0.653);
+  background-color: rgba(92, 112, 112, 0.653);
   transition: all 0.3s ease;
 }
-.glassCard2:hover img {
-  transform: translate(2px, 2px); 
+.glassCard:hover img {
+  animation: cloudMovement 0.5s ease-in-out infinite alternate; 
+}
+
+@keyframes cloudMovement {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(5px, 5px); 
+  }
 }
