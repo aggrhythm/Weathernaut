@@ -40,7 +40,7 @@ const WeatherCard=({
   }, [iconString])
 
   return (
-    <div className='w-[22rem] min-w-[22rem] h-[32rem] glassCard p-4'>
+    <div className='w-[22rem] min-w-[22rem] h-[34rem] glassCard p-4'>
       <div className='flex w-full just-center, items-center gap-4 mt-8 mb-4'>
         <img src={icon} alt="weather_icon" className='h-[8.5rem] w-[8.5rem]' />
         <p className='font-bold text-4xl flex justify-center items-center' >{temperature} &deg;C</p>
@@ -49,7 +49,7 @@ const WeatherCard=({
         {place}
       </div>
       <div className='w-full flex justify-between items-center mt-4'>
-        <p className='flex-1 text-center p-2'>{new Date().toDateString()}</p>
+        <p className='flex-2 text-center p-2'>{new Date().toDateString()}</p>
         <p className='flex-1 text-center p-2'>{time}</p>
       </div>
       <div className='w-full flex justify-between items-center mt-4 gap-4'>
