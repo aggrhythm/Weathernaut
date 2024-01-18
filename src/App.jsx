@@ -38,7 +38,7 @@ function App() {
           conditions={weather.conditions}
         />
 
-        <div className='flex justify-center gap-4 flex-wrap w-[60%]'>
+        <div className='flex justify-center gap-4 flex-wrap w-[60%] md:w-[65%]'>
           {
             values?.slice(1, 7).map(curr => {
               return (
