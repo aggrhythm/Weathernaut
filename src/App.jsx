@@ -6,7 +6,6 @@ import { BackgroundLayout, WeatherCard, MiniCard } from './components'
 function App() {
   const [input, setInput] = useState('')
   const { weather, thisLocation, values,place,setPlace} = useStateContext()
-  //console.log(weather)
   const submitCity=()=>{
     setPlace(input)
     setInput('')
@@ -15,8 +14,8 @@ function App() {
   return (
     <div className="w-full h-screen text-white px-8 py-0">
       <nav className='w-full p-3 flex justify-between items-center'>
-        <h1 className='font-bold tracking-wide text-4xl text-black'>Weathernaut</h1>
-        <div className='bg-white w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2 '>
+        <h1 className='font-bold tracking-wide text-4xl text-black sm:text-2xl'>Weathernaut</h1>
+        <div className='bg-white w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2 sm:gap-1'>
           <img src={search} alt="search" className='h-[1.5rem] w-[1.5rem]' />
           <input onKeyUp={(e) => {
             if (e.key === 'Enter') {
@@ -27,7 +26,8 @@ function App() {
 
       </nav>
       <BackgroundLayout></BackgroundLayout>
-      <main className='flex flex-wrap w-full gap-4 py-4 px-[10%] items-center justify-center '>
+      <main className='flex flex-wrap w-full gap-4 py-4 px-[10%] md
+      :px-[5%] items-center justify-center '>
         <WeatherCard
           place={thisLocation}
           windspeed={weather.wspd}
