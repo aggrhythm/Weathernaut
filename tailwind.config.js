@@ -6,8 +6,7 @@ export default {
   ],
   theme: {
     screens: {
-      'sm': '330px',
-      'md': '580px',},
+      'sm': '330px',},
     extend: {},
   },
   plugins: [],
